@@ -10,7 +10,7 @@ function getAVG(){
     var sum = G1 + G2 + G3 + G4 + G5 + G6 + G7;
     let AVG = sum/7;
     
-    alert("the test score average is: " + AVG.toFixed(0))
+    alert("The Average Grade is: " + AVG.toFixed(0))
     if(AVG > 100){
         alert("DOES NOT EXIST");
     }
