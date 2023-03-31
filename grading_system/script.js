@@ -10,31 +10,31 @@ function getAVG(){
     var sum = G1 + G2 + G3 + G4 + G5 + G6 + G7;
     let AVG = sum/7;
     
-    alert("The Average Grade is: " + AVG.toFixed(0))
     
-    //if(G1 > 100 || G2 > 100 || G3 > 100 || G4 > 100 || G5 > 100 || G6 > 100 || G7 > 100){
-        //alert("Please input between 0 - 100 only.");
-        //return;
-    //} 
+    
+    if(G1 > 100 || G2 > 100 || G3 > 100 || G4 > 100 || G5 > 100 || G6 > 100 || G7 > 100){
+        alert("Please input between 0 - 100 only.");
+        return;
+    } 
     
     if(AVG > 100){
-        alert("DOES NOT EXIST");
+        alert(AVG.toFixed(0)+ "\n" + "DOES NOT EXIST!" );
     }
 
     else if(AVG >= 90 && AVG <= 100){
-        alert('OUTSTANDING');
+        alert(AVG.toFixed(2)+ "\n"+ 'OUTSTANDING!');
     }
     else if(AVG >= 85 && AVG <= 89){
-        alert('VERY SATISFACTORY');
+        alert(AVG.toFixed(2)+ "\n" + 'VERY SATISFACTORY!');
     }
     else if(AVG >= 80 && AVG <= 84){
-        alert('SATISFACTORY');
+        alert(AVG.toFixed(2)+ "\n" +'SATISFACTORY!' );
     }
     else if(AVG >= 75 && AVG <= 79){
-        alert('FAIRLY SATISFACTORY');
+        alert(AVG.toFixed(2)+ "\n" + 'FAIRLY SATISFACTORY!');
     }
     else if(AVG < 75){
-        alert('DID NOT MEET EXPECTATIONS');
+        alert(AVG.toFixed(2)+"\n" + "DID NOT MEET EXPECTATION!");
     }
     
 
