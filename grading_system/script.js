@@ -15,16 +15,16 @@ function getAVG(){
         alert("DOES NOT EXIST");
     }
 
-    else if(AVG > 90 && AVG <100){
+    else if(AVG >= 90 && AVG <= 100){
         alert('OUTSTANDING');
     }
-    else if(AVG > 85 && AVG <89){
+    else if(AVG >= 85 && AVG <= 89){
         alert('VERY SATISFACTORY');
     }
-    else if(AVG > 80 && AVG <84){
+    else if(AVG >= 80 && AVG <= 84){
         alert('SATISFACTORY');
     }
-    else if(AVG > 75 && AVG <79){
+    else if(AVG >= 75 && AVG <= 79){
         alert('FAIRLY SATISFACTORY');
     }
     else if(AVG < 75){
