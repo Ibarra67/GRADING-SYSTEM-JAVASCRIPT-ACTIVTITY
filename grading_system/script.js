@@ -11,6 +11,12 @@ function getAVG(){
     let AVG = sum/7;
     
     alert("The Average Grade is: " + AVG.toFixed(0))
+    
+    if(G1 > 100 || G2 > 100 || G3 > 100 || G4 > 100 || G5 > 100 || G6 > 100 || G7 > 100){
+        alert("Please input between 0 - 100 only.");
+        return;
+    } 
+    
     if(AVG > 100){
         alert("DOES NOT EXIST");
     }
